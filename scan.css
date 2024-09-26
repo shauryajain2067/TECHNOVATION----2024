@@ -1,0 +1,136 @@
+/* Google Fonts */
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .sofadi-one-regular {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* END */
+.heading{
+    text-align: center;
+    color:black;
+    font-size:50px;
+    font-family:Protest Guerrilla;
+    background-color:#a7e6b8;
+    width:50%;
+    border-radius:15px;
+    margin-left:400px;
+}
+body{
+    background-color:#a8e7e4;
+}
+canvas{
+    border-radius:15px;
+    box-shadow:5px 5px 5px black;
+    border:2px solid black;
+}
+.valued{
+    display:inline-flex;
+    margin-left:600px;
+    width:600px;
+}
+.valour{
+    font-size:30px;
+    color:black;
+    font-weight:bold;
+    letter-spacing: 1px;
+    font-family:Sofadi One;
+    
+}
+button{
+    width:200px;
+    height:50px;
+    background-color:#a4e59c;
+    border-radius:15px;
+    margin-left:400px;
+    font-weight:bold;
+}
+.medical_hist{
+    margin-left:400px;
+    padding:15px;
+    font-size:20px;
+    width:150px;
+}
+span{
+    display:inline-flex;
+}
+.numers{
+    margin-left:100px;
+    padding:10px;
+    color:green;
+    font-size:30px;
+}
+.subhead{
+    margin-left:600px;
+    border-radius:15px;
+    padding:15px;
+    width:300px;
+    background-color:#677cc5;
+}
+h4{
+    margin-left:400px;
+    font-weight:bolder;
+}
+select{
+    margin-left:400px;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content .work {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: inline-block;  
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+.work:active{
+    background-color:gray;
+}
+.namy{
+    margin-left:400px;
+    letter-spacing:1px;
+    font-weight:bold;
+    border-radius:15px;
+    border:2px solid black;
+    height:50px;
+    width:150px;
+}
+.discription{
+    margin-left:200px;
+    border:2px solid black;
+    box-shadow:2px 2px 2px black;
+    background-color:#cff1d4;
+    width:fit-content;
+    height:fit-content;
+    padding:15px;
+    font-size:18px;
+    color:black;
+}

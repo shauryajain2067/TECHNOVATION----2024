@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Eye Scan AI</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    
+      <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    
+      <link rel="stylesheet" type="text/css" href="scan.css">
+    </head>
+    <body>
+        <h1 class="heading">Eye Test</h1>
+        <br><br>
+        <h1 class='subhead'>Medical Data</h1>
+        <br>
+        <span>
+        <h1 class="medical_hist btn btn-danger">Height</h1>
+        <h1 class="numers">160 CM</h1>
+        </span>
+        <br>
+        <span>
+          <h1 class="medical_hist btn btn-danger">Weight</h1>
+          <h1 class="numers">60 KG</h1>
+        </span>
+        <br>
+        <span>
+          <h1 class="medical_hist btn btn-danger">Allergies</h1>
+          <h1 class="numers">None</h1>
+        </span>
+        <br><br><br>
+        <button onclick="redirection()">Start Eye Scan</button>
+        <br>
+        <h4>*Note It is best to scan your eyes without your spectacles and a little closer to the camera *</h4>
+        <br><br><br><br>
+        <h1 class="subhead">Diagnosis</h1>
+        <br>
+        <div class="dropdown">
+          <button class="dropbtn">Select Disease Name</button>
+          <div class="dropdown-content">
+            <a onclick="bulgin()" class="work">Bulgin Eyes</a>
+            <a onclick="cataract()" class="work">Cataract</a>
+            <a onclick="uveteitis()" class="work">Uveteitis</a>
+            <a onclick="crossed()" class="work">Crossed Eyes</a>
+          </div>
+        </div>
+        <br><br><br>
+        <span>
+          <h1 class="btn btn-danger namy" id="dis_name">Disease Name</h1>
+          <p class="discription" id="symp"></p>
+        </span>
+        <br><br><br><br>
+        <span>
+          <h1 class="btn btn-danger namy">Remedy</h1>
+          <p class="discription" id="rem"></p>
+        </span>
+    </body>
+    <script src="scans.js"></script>
+    </html>
